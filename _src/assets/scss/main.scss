@@ -10,10 +10,6 @@ html {
   font-family: Futura,"Trebuchet MS",Arial,sans-serif;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit; 
-}
-
 svg {
   fill:white;
   background: rgba(0,0,0,0.1);
@@ -53,10 +49,11 @@ h2 {
 .plates label {
   flex: 1;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .plates input {
-  display: none;
+  display: none;  //quita el checkbox por defecto
 }
 
 .plates input + label:before {
